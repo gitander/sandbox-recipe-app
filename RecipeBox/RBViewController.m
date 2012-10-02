@@ -17,7 +17,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button setFrame:CGRectMake(100, 100, 100, 30)];
+    [button setTitle:@"Tap" forState:UIControlStateNormal];
+    
+    [self.view addSubview:button];
 }
 
 - (void)didReceiveMemoryWarning

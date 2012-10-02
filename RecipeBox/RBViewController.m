@@ -21,8 +21,14 @@
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button setFrame:CGRectMake(100, 100, 100, 30)];
     [button setTitle:@"Tap" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(tap:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:button];
+}
+
+- (void)tap: (id)sender
+{
+    NSLog(@"Something");
 }
 
 - (void)didReceiveMemoryWarning

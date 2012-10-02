@@ -13,6 +13,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    // NOTE: This is a conflicting change
     // TODO: We can do some initialization here as wells
     return YES;
 }
